@@ -19,7 +19,7 @@ for repo in repos:
 
 #Задание 2
 print("***************\nЗадание 2\n********************\n")
-track = input("Введите название трека: ",)
+track = input("Введите название аудиотрека: ",)
 url = "http://ws.audioscrobbler.com/2.0/"
 param = {"method":"track.search",
 		"track":track,
