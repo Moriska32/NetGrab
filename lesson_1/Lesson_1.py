@@ -7,10 +7,9 @@ from getpass import getpass
 print("***************\nЗадание 1\n********************\n")
 url = "https://api.github.com/user/repos"
 
-#login = input("Логин: ",)
-login = "moriska32"
-#password = input("Пароль: ",)
-password = "_mM6841539"
+login = input("Логин: ",)
+password = input("Пароль: ",)
+
 req = requests.get(url, auth=(login, password))
 
 repos = req.json()
