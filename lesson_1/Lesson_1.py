@@ -30,3 +30,5 @@ req = requests.get(url, params = param)
 
 for line in req.json()['results']['trackmatches']['track']:
 	print(line['artist']," - ",line['name'])
+file = open("response.json","w", encoding = "utf-8")
+file.write(str(req.json()))
