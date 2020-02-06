@@ -30,6 +30,8 @@ def update(where, items,record):
 	objects = docs.find({'link':items}).count()
 	if objects == 0:
 		docs.insert_one(record)
+	else:
+		docs.update({'link':items},record)
 	
 	
 
