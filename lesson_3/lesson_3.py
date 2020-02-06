@@ -31,7 +31,7 @@ def update(where, items,record):
 	if objects == 0:
 		docs.insert_one(record)
 	else:
-		docs.update_one({'link':items},record)
+		docs.update_one({'link':items},{'$set':record)
 	
 	
 
